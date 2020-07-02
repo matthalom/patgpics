@@ -1,0 +1,22 @@
+{
+  "name": "patgpics",
+  "version": "1.0.0",
+  "description": "The Personal Website for Patrick Thomas Grady",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthalom/patgpics.git"
+  },
+  "author": "Matt Halom",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/matthalom/patgpics/issues"
+  },
+  "homepage": "https://github.com/matthalom/patgpics#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
