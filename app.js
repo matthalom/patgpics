@@ -6,12 +6,11 @@ const path = require('path');
 const exphbs = require('express-handlebars');
 const morgan = require('morgan');
 const connectDB = require('./config/db');
+const mongoose = require('mongoose');
 
-// const mongoose = require('mongoose');
 // const passport = require('passport');
 // const session = require('express-session');
 // const MongoStore = require('connect-mongo')(session);
-// const connectDB = require('./config/db');
 
 // Creating Express App
 const app = express();
@@ -24,7 +23,7 @@ if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
 }
 
-connectDB()
+connectDB();
 
 // Static folder
 app.use(express.static(path.join(__dirname, 'public')));
