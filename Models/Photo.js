@@ -7,6 +7,7 @@ const PhotoSchema = new mongoose.Schema({
         trim: true
     },
 
+    // Need to figure out how to add raw photos to the mongoose database
     image: {
         type: String,
         required: true
