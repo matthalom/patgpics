@@ -5,6 +5,7 @@ const dotenv = require('dotenv');
 const path = require('path');
 const exphbs = require('express-handlebars');
 const morgan = require('morgan');
+const connectDB = require('./config/db');
 
 // const mongoose = require('mongoose');
 // const passport = require('passport');
@@ -22,6 +23,8 @@ dotenv.config({ path: './config/config.env' });
 if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
 }
+
+connectDB()
 
 // Static folder
 app.use(express.static(path.join(__dirname, 'public')));
